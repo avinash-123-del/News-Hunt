@@ -1,8 +1,8 @@
-'use client'
 import { AppContextProvider } from './components/Context'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
+import SliceProvider from './components/SliceProvider/SliceProvider'
 import { Toaster } from 'react-hot-toast'
 import Footer from './components/Footer'
 import { Provider } from 'react-redux'
@@ -21,14 +21,14 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/fav.png' sizes='any'/>
       </head>
       <body className={inter.className}>
-        <Provider store={store}>
+        <SliceProvider>
           <AppContextProvider>
             <Toaster />
             <Navbar />
             {children}
             <Footer />
           </AppContextProvider>
-        </Provider>
+        </SliceProvider>
       </body>
     </html>
   )

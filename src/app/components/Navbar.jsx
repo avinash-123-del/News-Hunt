@@ -47,7 +47,7 @@ const Navbar = () => {
 
                 <ul className="flex items-center justify-between gap-6 font-semibold text-gray-600">
 
-                    <Link href="/home">Home</Link>
+                    <Link href="/home">News</Link>
 
                     <Link href="/contact">Contact Us</Link>
                     
