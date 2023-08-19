@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Link from 'next/link'
 
-const ListNewsCard = ({ id , item }) => {
+const ListNewsCard = ({  item }) => {
 
   return (
     <div className=''>

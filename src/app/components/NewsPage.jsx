@@ -11,7 +11,7 @@ import { addNews, removeNews } from '../store/slices/userSlice';
 import { toast } from 'react-hot-toast';
 // import GridNewsCard from './GridNewsCard'.
 
-const NewsPage = ({ id,item }) => {
+const NewsPage = ({ item }) => {
   const { newsData, view } = UserAuth()
   const [heart, setHeart] = useState()
 
@@ -42,11 +42,11 @@ const NewsPage = ({ id,item }) => {
     <div className='relative py-8 ml-[100px]'>
       {/* List-view */}
 
-      {!view && <ListNewsCard id={id} item={item}/>}
+      {!view && <ListNewsCard item={item}/>}
    
       {/* Grid-view */}
       {view &&
-      <div className=''><GridNewsCard id={id} item={item}/></div>
+      <div className=''><GridNewsCard item={item}/></div>
        }
 
       <span 

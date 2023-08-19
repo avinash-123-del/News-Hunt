@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const GridNewsCard = ({ id,item }) => {
+const GridNewsCard = ({item}) => {
 
   // const { handleFav , heart, setHeart} = UserAuth()
   const [ heart , setHeart] = useState()
@@ -10,7 +10,6 @@ const GridNewsCard = ({ id,item }) => {
   // function handleFav(id) {
   //   setHeart(!heart)
   // } 
-  console.log(id);
 
   return (
 

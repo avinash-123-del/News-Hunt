@@ -57,7 +57,7 @@ function handleSelectChange(e){
         <div className={ view ? `grid grid-cols-3` : ''}>
           {
             newsData.map((item, i) => (
-              <NewsPage key={i} item={item} id={i} />
+              <NewsPage key={i} item={item} />
             ))
           }
         </div>
