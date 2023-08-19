@@ -23,7 +23,8 @@ function handleSearch(){
 function handleSelectChange(e){
   setSelectedValue(e.target.value)
 }
-console.log("language",selectedValue);
+// console.log("language",selectedValue);
+
 
   return (
     <div className='container pt-[100px]'>

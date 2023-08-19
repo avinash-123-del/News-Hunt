@@ -16,6 +16,12 @@ const firebaseConfig = {
   measurementId: "G-W81M1YPSG9"
 };
 
+// if(process.browser){
+
+//   console.log("window location",window.location.pathname);
+//   console.log(" location",process.browser);
+// }
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
