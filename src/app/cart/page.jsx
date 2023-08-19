@@ -1,0 +1,23 @@
+'use client'
+import React from 'react'
+import { useSelector } from 'react-redux/es/hooks/useSelector'
+import EmptyCart from '../components/EmptyCart'
+import CartItems from '../components/CartItems'
+
+const page = () => {
+    const data = useSelector((state) => {
+        return state.user
+    })
+console.log('data len',data.length);
+    return (
+        <div className='pt-[100px] container'>
+
+            {
+                data.length === 0 ? <EmptyCart /> : <CartItems />
+            }
+
+        </div>
+    )
+}
+
+export default page
