@@ -2,7 +2,7 @@
 import React, { useContext } from 'react'
 import { UserAuth } from '../components/Context'
 
-const page = () => {
+const Profile = () => {
     const { user } = UserAuth()
 
     return (
@@ -17,4 +17,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Profile
