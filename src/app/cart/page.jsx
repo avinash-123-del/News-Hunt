@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux/es/hooks/useSelector'
 import EmptyCart from '../components/EmptyCart'
 import CartItems from '../components/CartItems'
 
-const page = () => {
+const Cart = () => {
     const data = useSelector((state) => {
         return state.user
     })
@@ -20,4 +20,4 @@ console.log('data len',data.length);
     )
 }
 
-export default page
+export default Cart
