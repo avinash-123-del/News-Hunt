@@ -17,22 +17,26 @@ const firebaseConfig = {
   measurementId: "G-W81M1YPSG9"
 };
 
-// if(process.browser){
+const App = () => {
+  useEffect(() => {
+    const app = initializeApp(firebaseConfig);
 
-//   console.log("window location",window.location.pathname);
-//   console.log(" location",process.browser);
-// }
+    if (isSupported()) {
+      const analytics = getAnalytics(app);
+    } else {
+      console.log("Firebase Analytics is not supported in this environment.");
+    }
+  }, []);
 
-// Initialize Firebase
+  const auth = getAuth(app);
 
-const app = initializeApp(firebaseConfig);
-useEffect(() => {
+  // Rest of your component code here
+};
 
-  if (isSupported()) {
-    const analytics = getAnalytics(app);
-  }else {
-    console.log("Firebase Analytics is not supported in this environment.");
-  }
-},[])
+export default App;
 
-export const auth = getAuth(app);
+
+
+
+
+
