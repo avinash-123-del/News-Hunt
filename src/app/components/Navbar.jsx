@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import Image from 'next/image'
 import {  UserAuth } from './Context'
 import Link from 'next/link'
-import { UseSelector, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 
 const Navbar = () => {

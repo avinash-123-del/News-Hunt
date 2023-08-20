@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useSelector } from 'react-redux/es/hooks/useSelector'
+import { useSelector } from 'react-redux'
 import EmptyCart from '../components/EmptyCart'
 import CartItems from '../components/CartItems'
 
