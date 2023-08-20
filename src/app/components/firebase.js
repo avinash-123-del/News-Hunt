@@ -17,25 +17,12 @@ const firebaseConfig = {
   measurementId: "G-W81M1YPSG9"
 };
 
-const App = () => {
-  useEffect(() => {
+
     const app = initializeApp(firebaseConfig);
-
-    if (isSupported()) {
-      const analytics = getAnalytics(app);
-    } else {
-      console.log("Firebase Analytics is not supported in this environment.");
-    }
-  }, []);
-
   const auth = getAuth(app);
 
-  // Rest of your component code here
-};
 
-export default App;
-
-
+  export { auth };
 
 
 
